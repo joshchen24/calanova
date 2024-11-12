@@ -1,10 +1,20 @@
-const express = require('express')
-const app = express();
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
-app.get('/', (req, res) => {
-    res.send('<h1>Calanova<h1>');
-})
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
 
-app.listen(8000, () => {
-    console.log('port listening');
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
