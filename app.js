@@ -1,22 +1,10 @@
+import React  from "react";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
+import Welcome_page from './app/pages/welcome_page';
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text onPress={() => console.log("text pressed")}>
-        HelloWorld!
-      </Text>
-      <StatusBar style="auto" />
-    </SafeAreaView>
-  );
+  return <Welcome_page />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 2,
-    backgroundColor: 'lightblue',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
